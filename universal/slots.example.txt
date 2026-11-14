@@ -1,0 +1,6 @@
+# Name (shown in the menu, max 19 chars) | firmware file | options
+# Options: app=3M  fs=1M  fsimg=file.bin  label=spiffs  fstype=spiffs|littlefs|fat
+Meshtastic      | my-firmware/firmware-heltec-v4-2.8.2.4c89b69.factory.bin
+MeshCore BLE    | my-firmware/heltec_v4_companion_radio_ble-v1.18.0-81dbae5.bin
+RNode Reticulum | my-firmware/rnode_firmware_heltec32v4pa.bin | fsimg=console_image.bin
+MC Repeater     | my-firmware/heltec_v4_repeater-v1.18.0-81dbae5.bin

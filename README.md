@@ -2,6 +2,9 @@
 
 **[Русская версия / инструкция на русском → README.ru.md](README.ru.md)**
 
+> 🆕 **Want to choose your own firmwares (2–6 of any kind)?** Use the **[universal multiboot → `universal/`](universal/)**. Put your `.bin` files in, run the wizard, and every slot gets its own settings and filesystem.
+> **Хочешь сама выбрать прошивки (2–6 любых)?** Тебе нужна **[универсальная версия → `universal/`](universal/)**.
+
 Multiboot firmware package for the **Heltec WiFi LoRa 32 V4** (ESP32-S3, SX1262, 16 MB flash).
 Four firmwares live on the board at the same time. Switch between them with the PRG button and an on-screen menu, or with one command over USB. No reflashing needed.
 

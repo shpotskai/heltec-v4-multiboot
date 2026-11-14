@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+menu-src/build/
+menu-src/sdkconfig*
+backup-*.bin
+slots.txt
+my-firmware/*.bin
