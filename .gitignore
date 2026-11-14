@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+menu-src/build/
+menu-src/sdkconfig
+menu-src/sdkconfig.old
+backup-*.bin

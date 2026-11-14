@@ -1,0 +1,16 @@
+# Heltec WiFi LoRa 32 V4 (16 MB) — multiboot: menu + Meshtastic + MeshCore + RNode
+# Name,         Type, SubType,  Offset,   Size
+nvs,            data, nvs,      0x9000,   0x5000
+otadata,        data, ota,      0xE000,   0x2000
+menu,           app,  factory,  0x10000,  0x60000
+meshtastic,     app,  ota_0,    0x70000,  0x300000
+meshcore,       app,  ota_1,    0x370000, 0x280000
+rnode,          app,  ota_2,    0x5F0000, 0x200000
+# SPIFFS shared by MeshCore and RNode (both mount the FIRST spiffs partition).
+# Size must stay 0x1E0000: RNode console image is built for exactly this size.
+fs_mc_rn,       data, spiffs,   0x7F0000, 0x1E0000
+# Meshtastic LittleFS — Meshtastic looks it up by the label "spiffs".
+spiffs,         data, spiffs,   0x9D0000, 0x360000
+mbnames,        data, 0x40,     0xD30000, 0x1000
+coredump,       data, coredump, 0xD31000, 0x10000
+repeater,       app,  ota_3,    0xD50000, 0x200000
